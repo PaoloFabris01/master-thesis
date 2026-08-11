@@ -30,7 +30,7 @@ The model is based on **Chebyshev graph convolutions (ChebConv)** and incorporat
 
 
 
-Abstract
+## Thesis Abstract
 
 Modern agriculture is increasingly a data-intensive domain, in which satellite Earth observation supports
 sustainable and timely decision-making. Satellite Image Time Series (SITS), and in particular
