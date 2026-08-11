@@ -29,7 +29,7 @@ Contains the **trained model weights** corresponding to the final model configur
 The model is based on **Chebyshev graph convolutions (ChebConv)** and incorporates **attention mechanisms and edge weights** to model relationships between neighbouring image segments.
 
 <p align="center">
-  <img src="images/GNN.png" alt="Neural Net flowchart" width="600">
+  <img src="images/GNN.png" alt="Neural Net flowchart" width="400">
 </p>
 
 <p align="center">
@@ -70,7 +70,7 @@ Austria, achieving 87.58% overall accuracy and 78.21% weighted mIoU, and it cons
 a set of ablated and alternative configurations.
 
 <p align="center">
-  <img src="images/flowchart.png" alt="Overview of the proposed methodology" width="600">
+  <img src="images/flowchart.png" alt="Overview of the proposed methodology" width="400">
 </p>
 
 <p align="center">
