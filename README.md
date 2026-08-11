@@ -28,14 +28,12 @@ Contains the **trained model weights** corresponding to the final model configur
 
 The model is based on **Chebyshev graph convolutions (ChebConv)** and incorporates **attention mechanisms and edge weights** to model relationships between neighbouring image segments.
 
-## 
-
 <p align="center">
-  <img src="flowchart.png" alt="Overview of the proposed methodology" width="600">
+  <img src="images/GNN.png" alt="Neural Net flowchart" width="600">
 </p>
 
 <p align="center">
-  <em>Overview of the proposed framework for agricultural field segmentation and crop type mapping.</em>
+  <em>Proposed model flowchart</em>
 </p>
 
 
@@ -70,6 +68,14 @@ which aggregate spatial information hierarchically within a K-hop neighbourhood.
 evaluated on a year-long series of monthly Sentinel-2 images acquired over an agricultural region in
 Austria, achieving 87.58% overall accuracy and 78.21% weighted mIoU, and it consistently outperformed
 a set of ablated and alternative configurations.
+
+<p align="center">
+  <img src="images/flowchart.png" alt="Overview of the proposed methodology" width="600">
+</p>
+
+<p align="center">
+  <em>Overview of the proposed framework for agricultural field segmentation and crop type mapping.</em>
+</p>
 
 The full thesis manuscript is available here: https://thesis.unipd.it/handle/20.500.12608/102107
 
