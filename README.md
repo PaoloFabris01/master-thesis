@@ -28,7 +28,13 @@ Contains the **trained model weights** corresponding to the final model configur
 
 The model is based on **Chebyshev graph convolutions (ChebConv)** and incorporates **attention mechanisms and edge weights** to model relationships between neighbouring image segments.
 
-![Overall processing pipeline](flowchart.png)
+<p align="center">
+  <img src="flowchart.png" alt="Overview of the proposed methodology" width="900">
+</p>
+
+<p align="center">
+  <em>Overview of the proposed framework for agricultural field segmentation and crop type mapping.</em>
+</p>
 
 ## Thesis Abstract
 
