@@ -1,6 +1,7 @@
 # Agricultural Field Segmentation and Crop Type Mapping in Satellite Image Time Series Data by applying Graph Neural Network
-This repository contains the code of the custom framework designed and trained for the thesis. 
-The full thesis manuscript is available here: https://thesis.unipd.it/handle/20.500.12608/102107
+This repository contains the code of the custom framework designed and trained for the thesis. This repository has been created for archive and for showing purposes, files as raw original data, preprocessed data and validation scripts are missing because of dimension or other motivations.
+
+
 
 Abstract
 
@@ -33,3 +34,6 @@ which aggregate spatial information hierarchically within a K-hop neighbourhood.
 evaluated on a year-long series of monthly Sentinel-2 images acquired over an agricultural region in
 Austria, achieving 87.58% overall accuracy and 78.21% weighted mIoU, and it consistently outperformed
 a set of ablated and alternative configurations.
+
+The full thesis manuscript is available here: https://thesis.unipd.it/handle/20.500.12608/102107
+
