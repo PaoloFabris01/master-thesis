@@ -29,7 +29,7 @@ Contains the **trained model weights** corresponding to the final model configur
 The model is based on **Chebyshev graph convolutions (ChebConv)** and incorporates **attention mechanisms and edge weights** to model relationships between neighbouring image segments.
 
 <p align="center">
-  <img src="images/GNN.png" alt="Neural Net flowchart" width="400">
+  <img src="images/GNN.png" alt="Neural Net flowchart" width="500">
 </p>
 
 <p align="center">
