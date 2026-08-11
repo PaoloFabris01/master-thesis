@@ -71,7 +71,7 @@ test_loader = DataLoader(test_set, batch_size=batch_size, shuffle=False)
 
 
 
-'''
+
 # MODELLO FINALE
 # Modello (ChebConv K=3 + Attention head=2 (concatenazione) + edge weight + 8 features + dropout=0.5 + layer 3)
 #usato sia per:
@@ -138,7 +138,7 @@ hidden_channels = 128
 model = ChebConv_Temp_Att_combined_edgeweight(train_set[0], hidden_channels=hidden_channels, F=8, T=12, K=k, num_heads=num_heads)
 print(model)
 
-'''
+
 
 
 '''
@@ -417,7 +417,7 @@ dim_feedforward=128 non cambia la dimensione dell'output (che resta F),
 ma rende il layer più potente perché la MLP interna lavora in uno spazio più ampio.
 Se vuoi che l'output abbia dimensione 128, devi aggiungere un layer lineare dopo il flatten, oppure impostare d_model=128 e proiettare le feature iniziali!
 '''
-
+'''
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -479,7 +479,7 @@ num_layers = 2
 dim_feedforward = 128
 model = ChebConv_Temp_Transformer_edgeweight(train_set[0], hidden_channels=hidden_channels, F=8, T=12, K=k, num_heads=num_heads, num_layers=num_layers, dim_feedforward=dim_feedforward)
 print(model)
-
+'''
 
 
 
@@ -726,7 +726,7 @@ testing_time = test_end_time - test_start_time
 
 #save the model
 checkpoint = {
-    'model_description': 'connectivity=8, stacking attention e input features (8 features) - dati: "data_all_image_mask_patch_3_n_px_balanced_edgeweight.pt", modello: Cheb_Temp_Transformer_edgeweight (pixel_superpixel)',
+    'model_description': 'connectivity=8, stacking attention e input features (8 features) - dati: "data_all_image_mask_patch_3_n_px_balanced_edgeweight.pt", modello: Cheb_att_edgeweight_TestPatch_3 (pixel_superpixel)',
     'model_state_dict': model.state_dict(),
     'optimizer_state_dict': optimizer.state_dict(),
     'train_losses': train_losses_history,
@@ -754,7 +754,7 @@ checkpoint = {
 }
 
 #save the model
-model_filename = 'model_Cheb_Transformer_edgeweight_TestPatch_3.pth'
+model_filename = 'model_Cheb_att_edgeweight_TestPatch_3.pth'
 torch.save(checkpoint, model_filename)
 print(f"Model saved at {model_filename}")
 
