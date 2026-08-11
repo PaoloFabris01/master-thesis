@@ -1,5 +1,32 @@
-# Agricultural Field Segmentation and Crop Type Mapping in Satellite Image Time Series Data by applying Graph Neural Network
-This repository contains the code of the custom framework designed and trained for the thesis. This repository has been created for archive and for showing purposes, files as raw original data, preprocessed data and validation scripts are missing because of dimension or other motivations.
+# Agricultural Field Segmentation and Crop Type Mapping in Satellite Image Time Series Using Graph Neural Networks
+
+This repository contains the code and trained model developed as part of my Master's thesis on **agricultural field segmentation and crop type mapping from Sentinel-2 satellite image time series using Graph Neural Networks (GNNs)**.
+
+The framework was developed **from scratch** and is designed to exploit both the **spatial structure of agricultural fields** and their **temporal evolution** across a satellite image time series.
+
+> **Repository status:** This repository is primarily intended for **research archiving and demonstration purposes**. The complete original dataset, intermediate preprocessed data, and some validation scripts are not included due to data size, storage constraints, and other practical considerations.
+
+## Repository Contents
+
+The main files included in this repository are:
+
+### `slic_on_each_time_patch_3.py`
+
+Contains the **preprocessing and graph construction pipeline**. In particular, it includes the processing step based on **SLIC (Simple Linear Iterative Clustering)** segmentation, applied to the satellite image patches at each time step.
+
+The resulting segments are used to construct the graph representation of the agricultural scene, which is subsequently provided as input to the GNN model.
+
+### `model_slic_on_each_time_patch_3.py`
+
+Contains the **Graph Neural Network architecture and training pipeline** developed for the thesis.
+
+The model operates on the graph representation generated during preprocessing and incorporates spatial and temporal information from the satellite image time series.
+
+### `model_Cheb_att_edgeweight_TestPatch_3.pth`
+
+Contains the **trained model weights** corresponding to the final model configuration used in the experiments.
+
+The model is based on **Chebyshev graph convolutions (ChebConv)** and incorporates **attention mechanisms and edge weights** to model relationships between neighbouring image segments.
 
 
 
