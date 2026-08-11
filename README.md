@@ -1,5 +1,6 @@
 # Agricultural Field Segmentation and Crop Type Mapping in Satellite Image Time Series Data by applying Graph Neural Network
 Abstract
+
 Modern agriculture is increasingly a data-intensive domain, in which satellite Earth observation supports
 sustainable and timely decision-making. Satellite Image Time Series (SITS), and in particular
 the Sentinel-2 mission of the Copernicus programme, provide dense multispectral and multitemporal
